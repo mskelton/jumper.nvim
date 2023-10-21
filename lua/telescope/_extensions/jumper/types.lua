@@ -1,2 +1,2 @@
 --- @class jumper.Opts
---- @field public dirs string[]
+--- @field public dirs string[]?
