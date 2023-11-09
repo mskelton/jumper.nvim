@@ -1,2 +1,3 @@
 --- @class jumper.Opts
 --- @field public patterns string[]?
+--- @field public include_root boolean?

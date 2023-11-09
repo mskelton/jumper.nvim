@@ -7,9 +7,14 @@ local path = require("telescope._extensions.jumper.path")
 local util = require("telescope._extensions.jumper.util")
 
 --- @param root_dir string
---- @param patterns string[]
-local function find_directories(root_dir, patterns)
-	local results = { "." }
+--- @param opts jumper.Opts
+local function find_directories(root_dir, opts)
+	local patterns = opts.patterns or {}
+	local results = {}
+
+	if opts.include_root then
+		table.insert(results, ".")
+	end
 
 	for _, pattern in ipairs(patterns) do
 		--- @diagnostic disable-next-line: param-type-mismatch
@@ -34,8 +39,7 @@ return function(_, opts)
 		root_dir = vim.fn.getcwd()
 	end
 
-	local patterns = opts.patterns or {}
-	local results = find_directories(root_dir, patterns)
+	local results = find_directories(root_dir, opts)
 
 	pickers
 		.new(_, {

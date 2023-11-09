@@ -24,6 +24,7 @@ require("telescope").load_extension("jumper")
 require("telescope").setup {
     extensions = {
         jumper = {
+            include_root = true,
             patterns = {
                 "docs",
                 "packages/*"
