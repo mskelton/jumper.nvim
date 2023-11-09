@@ -51,6 +51,8 @@ return function(_, opts)
 
 					if dir == "." then
 						dir = root_dir
+					else
+						dir = path.join(root_dir, dir)
 					end
 
 					vim.fn.chdir(dir)
