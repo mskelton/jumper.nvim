@@ -1,4 +1,4 @@
-local path = require("telescope._extensions.jumper.path")
+local path = require("jumper.path")
 
 local M = {}
 

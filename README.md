@@ -47,3 +47,13 @@ or lua:
 ```lua
 require('telescope').extensions.jumper.list()
 ```
+
+## API
+
+### `jump_to_root`
+
+Changes your working directory to the root of the Git repository.
+
+```lua
+require('jumper').jump_to_root()
+```

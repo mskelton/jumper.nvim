@@ -3,8 +3,8 @@ local finders = require("telescope.finders")
 local pickers = require("telescope.pickers")
 local sorters = require("telescope.sorters")
 local state = require("telescope.actions.state")
-local path = require("telescope._extensions.jumper.path")
-local util = require("telescope._extensions.jumper.util")
+local path = require("jumper.path")
+local util = require("jumper.util")
 
 --- @param root_dir string
 --- @param opts jumper.Opts
