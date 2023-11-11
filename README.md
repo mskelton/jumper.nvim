@@ -1,4 +1,4 @@
-# telescope-jumper.nvim
+# jumper.nvim
 
 A [Telescope](https://github.com/nvim-telescope/telescope.nvim) extension to
 quickly switch your working directory from a list of specified directories
@@ -9,7 +9,7 @@ within a workspace.
 Install with your favorite package manager (e.g. [lazy.nvim](https://github.com/folke/lazy.nvim)):
 
 ```lua
-{ "mskelton/telescope-jumper.nvim" }
+{ "mskelton/jumper.nvim" }
 ```
 
 Then load the extension:

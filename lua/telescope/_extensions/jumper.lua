@@ -1,8 +1,6 @@
 local ok, telescope = pcall(require, "telescope")
 if not ok then
-	error(
-		"Install nvim-telescope/telescope.nvim to use mskelton/telescope-jumper.nvim."
-	)
+	error("Install nvim-telescope/telescope.nvim to use mskelton/jumper.nvim.")
 end
 
 local list = require("telescope._extensions.jumper.list")
