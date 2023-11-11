@@ -57,3 +57,11 @@ Changes your working directory to the root of the Git repository.
 ```lua
 require('jumper').jump_to_root()
 ```
+
+### `jump_to_current_directory`
+
+Changes your working directory to the directory of the currently open buffer.
+
+```lua
+require('jumper').jump_to_current_directory()
+```
